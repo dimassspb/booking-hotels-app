@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="sticky">
       <nav className="navbar navbar-expand-lg">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img
             className="brand-logo"
             src="https://1000logos.net/wp-content/uploads/2020/08/Booking_Com_logo_PNG17.png"
