@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className="sticky">
       <nav className="navbar navbar-expand-lg">
-        <div className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <img
             className="brand-logo"
             src="https://1000logos.net/wp-content/uploads/2020/08/Booking_Com_logo_PNG17.png"
             alt=""
           />
-        </div>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -24,12 +25,12 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-item nav-link active" href="/register">
+            <Link className="nav-item nav-link active" to="/registration">
               Register
-            </a>
-            <a className="nav-item nav-link" href="/login">
+            </Link>
+            <Link className="nav-item nav-link" to="/login">
               Login
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

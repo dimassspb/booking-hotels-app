@@ -19,6 +19,13 @@ h1 {
   font-size: 20px;
 }
 
+h2 {
+  font-size: 30px !important;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold !important;
+}
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -96,4 +103,10 @@ h1 {
 .pagination > .active > a:hover {
   background-color: #0a469b !important;
   border: solid 1px #003580;
+}
+
+input {
+  box-shadow: none !important;
+  margin-top: 10px;
+  border: 1px solid black !important;
 }
