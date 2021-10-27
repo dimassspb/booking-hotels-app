@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import Hotel from '../components/Hotel';
 import DB from '../DB';
 import Pagination from '../components/Pagination';
@@ -11,7 +11,7 @@ import Loader from '../components/Loader';
 const HomeScreen = () => {
   const [hotels, setHotels] = useState([]);
   const [loading, setLoading] = useState();
-  const [error, setError] = useState();
+  // const [error, setError] = useState();
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 3;
 
@@ -37,22 +37,18 @@ const HomeScreen = () => {
       setLoading(false);
     }, 2000);
   }, []);
-  console.log(DB);
 
   useEffect(() => {
     setCurrentPage(1);
   }, []);
 
   const count = hotels.length;
-  console.log('Count:', count);
 
   const hotelsCrop = paginate(hotels, currentPage, pageSize);
-  console.log('hotelsCrop', hotelsCrop);
   const handlePageChange = (pageIndex) => {
     setCurrentPage(pageIndex);
     window.scrollTo(0, 0)
   };
-  console.log('currentPage', currentPage);
 
   return (
     <div className="container">
@@ -63,8 +59,8 @@ const HomeScreen = () => {
           hotelsCrop.map((hotel) => {
             return (
               <>
-                <div key={hotel.id} className="col-md-9 mt-3">
-                  <Hotel hotel={hotel} />
+                <div className='col-md-9 mt-3'>
+                  <Hotel key={hotel.id} hotel={hotel} />
                 </div>
               </>
             );

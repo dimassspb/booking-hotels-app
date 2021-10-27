@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { Modal, Button, Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import formatCurrency from '../utils/currency'
-const Hotel = ({ hotel }) => {
-  console.log('hotel', hotel.name);
-  const [show, setShow] = useState(false);
 
+const Hotel = ({ hotel }) => {
+  const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 

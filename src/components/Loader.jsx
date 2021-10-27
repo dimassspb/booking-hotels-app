@@ -3,7 +3,7 @@ import RingLoader from 'react-spinners/RingLoader';
 import { css } from '@emotion/react';
 
 const Loader = () => {
-  let [loading, setLoading] = useState(true);
+  let [loading] = useState(true);
 
   const override = css`
     display: block;

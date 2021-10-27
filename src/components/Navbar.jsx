@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const user = JSON.parse(localStorage.getItem('currentUser'));
+  const user = localStorage.getItem('currentUserName');
   const logOut = () => {
-    localStorage.removeItem('currentUser');
+    localStorage.removeItem('currentUserName');
     window.location.reload();
   };
 
@@ -34,18 +34,18 @@ const Navbar = () => {
           <div className="navbar-nav mr-5">
             {user ? (
               <>
-                <div class="dropdown">
+                <div className="dropdown">
                   <button
-                    class="btn btn-primary dropdown-toggle"
+                    className="btn btn-primary dropdown-toggle"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <i className="fa fa-user"></i> {user.name}
+                    <i className="fa fa-user"></i> {user}
                   </button>
                   <ul
-                    class="dropdown-menu"
+                    className="dropdown-menu"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <li>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import Error from '../components/Error';
 import Loader from '../components/Loader';
 import Success from '../components/Success';
@@ -9,8 +9,8 @@ const RegistrationScreen = () => {
   const [password, setPassword] = useState('');
   const [cpassword, setCpassword] = useState('');
 
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState();
+  const [loading] = useState(false);
+  const [error] = useState();
   const [success, setSuccess] = useState();
 
   // блок запроса в базу axios
@@ -35,7 +35,10 @@ const RegistrationScreen = () => {
         cpassword,
       };
       console.log(user);
-      localStorage.setItem('currentUser', JSON.stringify(user));
+      localStorage.setItem('currentUserEmail', user.email);
+      localStorage.setItem("currentUserPassword", user.password);
+      localStorage.setItem("currentUserName", user.name);
+
       setName(''); // временно
       setEmail(''); // временно
       setPassword(''); // временно
