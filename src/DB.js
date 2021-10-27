@@ -60,7 +60,11 @@ const DB = [
     },
     oferta: true,
     recomendado: true,
-    img: ['https://cf.bstatic.com/images/hotel/max1024x768/216/216165441.jpg'],
+    img: [
+      'https://cf.bstatic.com/images/hotel/max1024x768/216/216165441.jpg',
+      'https://avatars.mds.yandex.net/get-altay/947364/2a000001664e462a86b2192dd8882b8694b9/XXL',
+      'https://cdn.ostrovok.ru/t/1024x768/content/fd/b8/fdb89422cfba01184c3213e04429989b673d55ea.jpeg',
+    ],
   },
   {
     id: '2',
@@ -98,6 +102,8 @@ const DB = [
     recomendado: false,
     img: [
       'https://media-cdn.tripadvisor.com/media/photo-s/0a/c6/d6/c4/gpro-valparaiso-palace.jpg',
+      'https://anextour-moscow.ru/images/hotels/gallery/553844/0-0_15971600936829.jpg',
+      'https://thumbnails.trvl-media.com/LeSNtZWXIM1PINK06hhogQziBdg=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/8000000/7840000/7830900/7830885/5438f706_z.jpg',
     ],
   },
   {
@@ -125,7 +131,11 @@ const DB = [
     },
     oferta: true,
     recomendado: false,
-    img: ['https://foto-origin.hrsstatic.com/foto/0/7/2/7//teaser_072735.jpg'],
+    img: [
+      'https://foto-origin.hrsstatic.com/foto/0/7/2/7//teaser_072735.jpg',
+      'https://cdn.ostrovok.ru/t/1024x768/content/af/fd/affd7fdc3224caf54a5573c5df2f20a739e851bf.jpeg',
+      'https://avatars.mds.yandex.net/get-altay/1524599/2a00000169bc66aa883f2dd559f8b1967950/XXL',
+    ],
   },
   {
     id: '4',

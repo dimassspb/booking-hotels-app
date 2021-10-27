@@ -13,7 +13,7 @@ const Hotel = ({ hotel }) => {
     <div>
       <div className="row bs">
         <div className="col-md-5">
-          <img src={hotel.img} alt="" className="smallimg"></img>
+          <img src={hotel.img[0]} alt="" className="smallimg"></img>
         </div>
         <div className="col-md-7">
           <h1>

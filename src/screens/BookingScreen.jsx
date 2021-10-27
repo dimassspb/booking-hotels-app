@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
-import Loader from '../components/Loader';
 import DB from '../DB';
 import formatCurrency from '../utils/currency';
 import Error from '../components/Error';
+import Loader from '../components/Loader';
 
 const BookingScreen = ({ match }) => {
   const [loading, setLoading] = useState(true);
@@ -45,7 +45,7 @@ const BookingScreen = ({ match }) => {
           <div className="row justify-content-center mt-5 bs">
             <div className="col-md-6">
               <h1>{hotel.name}</h1>
-              <img src={hotel.img} alt={''} className="bigimg"></img>
+              <img src={hotel.img[0]} alt={''} className="bigimg"></img>
             </div>
             <div className="col-md-5">
               <div style={{ textAlign: 'right' }}>

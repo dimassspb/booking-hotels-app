@@ -27,7 +27,7 @@ h2 {
 }
 
 .sticky {
-  position: -webkit-sticky;
+  /* position: -webkit-sticky; */
   position: sticky;
   top: 0;
 }
@@ -52,7 +52,8 @@ h2 {
 }
 
 .navbar-nav {
-  margin-left: auto !important;
+  margin-left: auto;
+  margin-right: 40px;
 }
 
 .smallimg {
@@ -73,6 +74,16 @@ h2 {
   margin-top: 20px;
   border-radius: 5px;
   padding: 20px;
+}
+
+@media (max-width: 630px) {
+  .bigimg {
+    display: none;
+  }
+  .nav-link {
+    position: relative;
+    margin-left: 100px;
+  }
 }
 
 .bigimg {
@@ -109,4 +120,8 @@ input {
   box-shadow: none !important;
   margin-top: 10px;
   border: 1px solid black !important;
+}
+
+.dropdown-toggle {
+  border: 0px solid black !important;
 }

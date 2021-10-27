@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import Error from '../components/Error';
+import Loader from '../components/Loader';
+import Success from '../components/Success';
 
 const RegistrationScreen = () => {
   const [name, setName] = useState('');
@@ -6,8 +9,25 @@ const RegistrationScreen = () => {
   const [password, setPassword] = useState('');
   const [cpassword, setCpassword] = useState('');
 
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState();
+  const [success, setSuccess] = useState();
+
+  // блок запроса в базу axios
+  // setLoading(true);
+  // после post запроса
+  // setLoading(false);
+  // setSuccess(true);
+  // setName('');
+  // setEmail('');
+  // setPassword('');
+  // setCpassword('');
+  // в catch setLoading(false) setError(true)
+
+  // конец блока
+
   const register = () => {
-if (password === cpassword) {
+    if (password === cpassword) {
       const user = {
         name,
         email,
@@ -15,15 +35,26 @@ if (password === cpassword) {
         cpassword,
       };
       console.log(user);
-} else {
-  alert('Password not matched')
-}
+      localStorage.setItem('currentUser', JSON.stringify(user));
+      setName(''); // временно
+      setEmail(''); // временно
+      setPassword(''); // временно
+      setCpassword(''); // временно
+      setSuccess(true); // временно
+      // window.location.href = '/login';
+    } else {
+      alert('Password not matched');
+    }
   };
 
   return (
     <>
+      {loading && <Loader />}
+      {error && <Error />}
+
       <div className="row justify-content-center mt-5">
         <div className="col-md-5 mt-5">
+          {success && <Success message="Registration success" />}
           <div className="bs">
             <h2>Register</h2>
             <input
