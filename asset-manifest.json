@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/booking-hotels-app/static/css/main.4b6b0648.chunk.css",
-    "main.js": "/booking-hotels-app/static/js/main.bc62097c.chunk.js",
-    "main.js.map": "/booking-hotels-app/static/js/main.bc62097c.chunk.js.map",
-    "runtime-main.js": "/booking-hotels-app/static/js/runtime-main.93a6889e.js",
-    "runtime-main.js.map": "/booking-hotels-app/static/js/runtime-main.93a6889e.js.map",
-    "static/js/2.1ef8853e.chunk.js": "/booking-hotels-app/static/js/2.1ef8853e.chunk.js",
-    "static/js/2.1ef8853e.chunk.js.map": "/booking-hotels-app/static/js/2.1ef8853e.chunk.js.map",
-    "static/js/3.df1da491.chunk.js": "/booking-hotels-app/static/js/3.df1da491.chunk.js",
-    "static/js/3.df1da491.chunk.js.map": "/booking-hotels-app/static/js/3.df1da491.chunk.js.map",
+    "main.css": "/booking-hotels-app/static/css/main.9627789f.chunk.css",
+    "main.js": "/booking-hotels-app/static/js/main.e39fd13d.chunk.js",
+    "main.js.map": "/booking-hotels-app/static/js/main.e39fd13d.chunk.js.map",
+    "runtime-main.js": "/booking-hotels-app/static/js/runtime-main.e3325c9c.js",
+    "runtime-main.js.map": "/booking-hotels-app/static/js/runtime-main.e3325c9c.js.map",
+    "static/css/2.a95be28f.chunk.css": "/booking-hotels-app/static/css/2.a95be28f.chunk.css",
+    "static/js/2.3924303c.chunk.js": "/booking-hotels-app/static/js/2.3924303c.chunk.js",
+    "static/js/2.3924303c.chunk.js.map": "/booking-hotels-app/static/js/2.3924303c.chunk.js.map",
+    "static/js/3.1f1dd7e3.chunk.js": "/booking-hotels-app/static/js/3.1f1dd7e3.chunk.js",
+    "static/js/3.1f1dd7e3.chunk.js.map": "/booking-hotels-app/static/js/3.1f1dd7e3.chunk.js.map",
     "index.html": "/booking-hotels-app/index.html",
-    "static/css/main.4b6b0648.chunk.css.map": "/booking-hotels-app/static/css/main.4b6b0648.chunk.css.map",
-    "static/js/2.1ef8853e.chunk.js.LICENSE.txt": "/booking-hotels-app/static/js/2.1ef8853e.chunk.js.LICENSE.txt"
+    "static/css/2.a95be28f.chunk.css.map": "/booking-hotels-app/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.9627789f.chunk.css.map": "/booking-hotels-app/static/css/main.9627789f.chunk.css.map",
+    "static/js/2.3924303c.chunk.js.LICENSE.txt": "/booking-hotels-app/static/js/2.3924303c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.93a6889e.js",
-    "static/js/2.1ef8853e.chunk.js",
-    "static/css/main.4b6b0648.chunk.css",
-    "static/js/main.bc62097c.chunk.js"
+    "static/js/runtime-main.e3325c9c.js",
+    "static/css/2.a95be28f.chunk.css",
+    "static/js/2.3924303c.chunk.js",
+    "static/css/main.9627789f.chunk.css",
+    "static/js/main.e39fd13d.chunk.js"
   ]
 }
