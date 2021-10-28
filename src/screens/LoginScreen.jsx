@@ -49,7 +49,7 @@ const LoginScreen = () => {
             <h2>Login</h2>
             <input
               type='text'
-              className='form-control'
+              className='form-control mb-2'
               placeholder='email'
               value={email}
               onChange={(e) => {
@@ -58,7 +58,7 @@ const LoginScreen = () => {
             />
             <input
               type='text'
-              className='form-control'
+              className='form-control mb-2'
               placeholder='password'
               value={password}
               onChange={(e) => {

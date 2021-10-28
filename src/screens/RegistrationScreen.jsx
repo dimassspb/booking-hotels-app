@@ -55,49 +55,49 @@ const RegistrationScreen = () => {
       {loading && <Loader />}
       {error && <Error />}
 
-      <div className="row justify-content-center mt-5">
-        <div className="col-md-5 mt-5">
-          {success && <Success message="Registration success" />}
-          <div className="bs">
+      <div className='row justify-content-center mt-5'>
+        <div className='col-md-5 mt-5'>
+          {success && <Success message='Registration success' />}
+          <div className='bs'>
             <h2>Register</h2>
             <input
-              type="text"
-              className="form-control"
-              placeholder="name"
+              type='text'
+              className='form-control mb-2'
+              placeholder='name'
               value={name}
               onChange={(e) => {
                 setName(e.target.value);
               }}
             />
             <input
-              type="text"
-              className="form-control"
-              placeholder="email"
+              type='text'
+              className='form-control mb-2'
+              placeholder='email'
               value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
             />
             <input
-              type="text"
-              className="form-control"
-              placeholder="password"
+              type='text'
+              className='form-control mb-2 '
+              placeholder='password'
               value={password}
               onChange={(e) => {
                 setPassword(e.target.value);
               }}
             />
             <input
-              type="text"
-              className="form-control"
-              placeholder="confirm password"
+              type='text'
+              className='form-control mb-2'
+              placeholder='confirm password'
               value={cpassword}
               onChange={(e) => {
                 setCpassword(e.target.value);
               }}
             />
             <button
-              className="btn btn-primary show-more-btn mt-3"
+              className='btn btn-primary show-more-btn mt-3'
               onClick={register}
             >
               Register
